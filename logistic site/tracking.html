@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Shipment | Cargo Care Logistic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>CARGO CARE LOGISTIC</h2>
+
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tracking.html">Track Shipment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+
+
+            </ul>
+        </nav>
+    </header>
+    
+
+    
+    <section class="hero" style="height:40vh;">
+        <h1>Track Your Shipment</h1>
+        <p>Enter your tracking number below.</p>
+    </section>
+
+
+    <section class="tracking">
+        <h2>Shipment Tracking</h2>
+
+        <form>
+            <input
+                type="text"
+                id="trackingNumber"
+                placeholder="Enter Tracking Number"
+                required
+            >
+
+            <button type="button" onclick="trackShipment()">
+                Track Package
+            </button>
+        </form>
+    </section>
+
+    <section class="tracking-result">
+        <div class="result-card">
+            <h2>Shipment Details</h2>
+
+            <p><strong>Tracking Number:</strong> CCL123456789</p>
+            <p><strong>Status:</strong> In Transit</p>
+            <p><strong>Origin:</strong> London, UK</p>
+            <p><strong>Destination:</strong> Edinburgh, Scotland</p>
+            <p><strong>Current Location:</strong> Newcastle, UK</p>
+            <p><strong>Estimated Delivery:</strong> June 10, 2026</p>
+
+            
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Timeline -->
+    <section class="timeline">
+        <h2>Shipment History</h2>
+
+        <div class="timeline-item">
+            <h4>Package Received</h4>
+            <p>London Warehouse</p>
+            <span>06 June 2026 - 09:00 AM</span>
+        </div>
+
+        <div class="timeline-item">
+            <h4>Package Processed</h4>
+            <p>World-Wide Distribution Center</p>
+            <span>06 June 2026 - 01:30 PM</span>
+        </div>
+
+        <div class="timeline-item">
+            <h4>In Transit</h4>
+            <p>Newcastle, UK</p>
+            <span>06 June 2026 - 07:45 PM</span>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2026 Cargo Care Logistic. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function trackShipment() {
+            const tracking =
+                document.getElementById("trackingNumber").value;
+
+            if (tracking === "") {
+                alert("Please enter a tracking number");
+            } else {
+                alert("Searching for shipment: " + tracking);
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

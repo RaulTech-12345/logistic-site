@@ -1,0 +1,126 @@
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("../images/shipping-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(214, 184, 184);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.services {
+    padding: 80px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    background: #102f4e;
+}
+
+.service-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.service-box h3 {
+    color: #ff4500;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.service-box p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.about h2 {
+    color: #ff4500;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.stats {
+    padding: 80px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    background: white;
+}
+
+.stats .card {
+    background: #ff4500;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.stats .card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.stats .card p {
+    font-size: 1rem;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+}
